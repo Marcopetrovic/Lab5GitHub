@@ -9,6 +9,17 @@ public class Dices  {
         this.value = (int)(Math.random()*6+1);
     }
 
+    void setDieValue(int v) {
+        this.value = v;
+    }
+
+
+
+
+
+
 
 }
+
+
 

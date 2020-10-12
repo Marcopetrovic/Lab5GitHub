@@ -1,5 +1,5 @@
 package com.company.lab5gitHub;
-/*
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,10 +7,10 @@ public class YatziTest {
 
     @Test
     void isYatziWhenAllDiceMatches() {
-        Die[] dice = new Dices[5];
+        Dices[] dice = new Dices[5];
         for (int i= 0; i<5; i++) {
             dice[i] = new Dices();
-            dice[i].setDiceValue(6);
+            dice[i].setDieValue(6);
         }
         assertTrue(YatziMain.checkIfYatzi(dice));
     }
@@ -31,4 +31,3 @@ public class YatziTest {
 }
 
 
- */

@@ -1,19 +1,13 @@
 package com.company.lab5gitHub;
 
-
-
-
-
 import java.util.Scanner;
 
-
-
-
-
 public class YatziMain {
+
     private static int gameTurns = 1;
     static Scanner sc = new Scanner(System.in);
     static Dices[] ds = new Dices[5];
+
 
 
 
@@ -37,6 +31,7 @@ public class YatziMain {
         }
 
     }
+
 
     static void rollDices() {
         int dieNumber = 1;
@@ -103,9 +98,6 @@ public class YatziMain {
         }
         return true;
     }
-
-
-
 
 
     public static void newRound() {
