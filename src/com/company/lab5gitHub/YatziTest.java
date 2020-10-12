@@ -1,25 +1,34 @@
 package com.company.lab5gitHub;
-
-import com.company.lab5gitHub.Dieces;
+/*
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class YatziTest {
+
     @Test
     void isYatziWhenAllDiceMatches() {
-        Dieces[] dice = new Dieces[5];
-        for(Dieces die: dice) {
-            die.value = 6;
+        Die[] dice = new Dices[5];
+        for (int i= 0; i<5; i++) {
+            dice[i] = new Dices();
+            dice[i].setDiceValue(6);
         }
-        //Assert something?
+        assertTrue(YatziMain.checkIfYatzi(dice));
     }
 
     @Test
     void isNotYatziWhenOneDieIsNotMatchingTheOther() {
-        Dieces[] dice = new Dieces[5];
-        for(Dieces die: dice) {
-            die.value = 6;
+        Dices[] dices = new Dices[5];
+        for (int i=0; i<5; i++) {
+            dices[i] = new Dices();
+            if (i == 4 ) {
+                dices[i].setDieValue(1);
+            } else {
+                dices[i].setDieValue(6);
+            }
         }
-        dice[5].value = 1;
-        //Assert something?
+        assertFalse(YatziMain.checkIfYatzi(dices));
     }
 }
+
+
+ */
