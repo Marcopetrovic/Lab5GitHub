@@ -2,7 +2,7 @@ package com.company.lab5gitHub;
 
 import java.util.Scanner;
 
-public class YatziMain {
+ class YatziMain {
 
     private static int gameTurns = 1;
     static Scanner sc = new Scanner(System.in);
@@ -17,7 +17,6 @@ public class YatziMain {
         System.out.println("Hello! Do you want to play a game of Yatzi? (type yes for start, rules to read the rules, hacks to test to auto generate Yatzi and anything else for no)");
         switch (sc.next()) {
             case "yes" -> gameIsOn();
-            case "rules" -> Rules.printRules();
             case "hacks" -> gameIsOnHax();
             default -> exitGame();
         }
@@ -90,7 +89,7 @@ public class YatziMain {
     }
 
 
-    public static boolean checkIfYatzi(Dices[] dices) {
+    static boolean checkIfYatzi(Dices[] dices) {
         for (int i = 1; i < dices.length; i++) {
             if (dices[i].value != dices[i - 1].value) {
                 return false;
@@ -100,7 +99,7 @@ public class YatziMain {
     }
 
 
-    public static void newRound() {
+    static void newRound() {
         if(!checkIfYatzi(ds)){
             if (gameTurns != 3) {
                 System.out.println("Want to throw again?");
@@ -120,7 +119,7 @@ public class YatziMain {
     }
 
 
-    public static void gameOver(){
+    static void gameOver(){
         System.out.println("Game over! Want to play again? Type yes to play again and type menu to come to the menu.");
         switch (sc.next()) {
             case "yes" -> gameIsOn();
@@ -131,7 +130,7 @@ public class YatziMain {
     }
 
 
-    public static void exitGame(){
+    static void exitGame(){
         System.out.println("See you another time!");
         System.exit(0);
     }
